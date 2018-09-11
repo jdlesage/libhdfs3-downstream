@@ -36,6 +36,8 @@ BuildRequires: libxml2-devel
 BuildRequires: krb5-devel
 BuildRequires: libgsasl-devel
 BuildRequires: protobuf-devel
+BuildRequires: boost-devel
+BuildRequires: openssl-devel
 
 %description
 Libhdfs3, designed as an alternative implementation of libhdfs,
@@ -72,7 +74,7 @@ small memory footprint code base. In addition, it is easy to use and deploy.
 
 %files
 %defattr(-,root,root,-)
-%{_prefix}/lib/lib*.so.*
+%{_prefix}/lib/lib*.so*
 
 %files devel
 %defattr(-,root,root,-)
