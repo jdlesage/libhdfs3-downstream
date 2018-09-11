@@ -38,6 +38,7 @@ BuildRequires: libgsasl-devel
 BuildRequires: protobuf-devel
 BuildRequires: boost-devel
 BuildRequires: openssl-devel
+BuildRequires: libcurl-devel
 
 %description
 Libhdfs3, designed as an alternative implementation of libhdfs,

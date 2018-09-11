@@ -27,7 +27,7 @@ install_depends() {
     yum install -y epel-release || die "cannot install epel"
     yum install -y \
         which make rpmdevtools gcc-c++ cmake boost-devel libxml2-devel libuuid-devel krb5-devel libgsasl-devel openssl-devel \
-        protobuf-devel || die "cannot install dependencies"
+        protobuf-devel libcurl-devel || die "cannot install dependencies"
 }
 
 create_package() {
