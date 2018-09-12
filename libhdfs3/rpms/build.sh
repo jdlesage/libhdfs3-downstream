@@ -33,8 +33,8 @@ install_depends() {
 create_package() {
 	pushd ${top_dir}
     rm -rf build && mkdir -p build && cd build || die "cannot create build directory"
-    ../bootstrap || die "bootstrap failed"
-	make rpm-package || die "failed to create debian package"
+    ../bootstrap --enable-boost || die "bootstrap failed"
+	make rpm-package || die "failed to create centos package"
 	popd
 }
 
